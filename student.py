@@ -1,16 +1,13 @@
-
-# Currency Conversion: INR to USD
-
-exchange_rate = 98
-
-def inr_to_usd(inr):
-    usd = inr / exchange_rate
-    return round(usd, 2)
+def inr_to_usd(amount):
+    # Keep your existing conversion calculation here
+    return amount  # Replace with your existing result
 
 
-amount = float(input("Enter amount in INR: "))
+def main():
+    amount = float(input("Enter amount in INR: "))
+    result = inr_to_usd(amount)
+    print("Amount in USD:", result)
 
-result = inr_to_usd(amount)
 
-print("Indian Rupees:", amount)
-print("US Dollars:", result)
+if __name__ == "__main__":
+    main()
